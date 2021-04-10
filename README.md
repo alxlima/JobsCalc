@@ -56,7 +56,7 @@
 
 <br>
 
-###### **Evento :** Maratona -Discovery 1ª Edição - [Rocketseat](https://rocketseat.com.br)
+###### **Evento :** Maratona -Discovery 2ª Edição - [Rocketseat](https://rocketseat.com.br)
 ###### **Instrutores :** "Mayk Brito" e "Jakeliny"
 
 <br>
