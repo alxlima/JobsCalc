@@ -1,10 +1,15 @@
 const express = require("express")//var para executar o server
 const server = express()
 const routes = require("./routes") //busco as rotas no arquivo.
+const path = require("path") //
 
 // usando template engene - motor de redenrização é EJS
 //inclui configuação para utilizar EJS - Template Engine - command install terminal:  npm i ejs
 server.set('view engine','ejs') // [EJS] - motor de visualização do HTML sera EJS
+
+//Refatorei a chamada pasta views setando aqui o caminho diretorio projeto
+server.set('views', path.join(__dirname, 'views')) //[set]-setar [Path.join] - caminho base em [__dirName] - diretorio rais so sistema.
+                                                   //[.join]-- junto __dirname + pasta view
 
 // habilitar arquivos statics - publicos- scritps-img
 server.use(express.static("public")) // [Use] serve add conf. servidor, neste caso busca arq. pasta public criando as rotas.
